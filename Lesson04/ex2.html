@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các bộ thông dụng vs css</title>
+</head>
+<style>
+    /*-bộ chọn phần tử: body,h1, section,...*/
+    body{
+        background-color: aqua;
+
+    }
+    h1{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+    }
+    #zone1{
+        border:5px solid blue;
+        background-color: #fff;
+        padding:1rem;
+    }
+    .container{
+        background-color: green;
+        margin: 1rem 2rem;
+        padding:1rem;
+    }
+    .item{
+        color: yellow;
+    }
+    .btn{
+        border: 3px solid red;
+        border-radius: 3px;
+        padding:.5rem 1rem;
+    }
+    .btn-red{
+        color:#fff;
+        background-color: red;
+    }
+    .btn-green{
+        background-color: green;
+    }
+    input[type="button"]{
+        font-family:fantasy;
+        font-size:5rem;
+    }
+    #zone2{
+        font-size:40px;
+    }
+    p.item{
+        font-size:20px;
+    }
+    .sp-1{
+        font-size:2em;
+    }
+    .sp-2{
+        font-size:2rem;
+    }
+</style>
+<body>
+    <section>
+        <h1>Các bộ thông dụng với css</h1>
+        <hr>
+        <pre>
+            -bộ chọn phần tử: body,h1, section,...
+            -bộ chọn thuộc tính id:#zone1,#catalog,...
+            -bộ chọn class:.class-name, .container, .row, .item,...
+            -bộ chọn giá trị thuộc tính: input[type="text"]{},...
+        </pre>
+    </section>
+    <section id="zone1">
+        <h2>bộ chọn thuộc tính id</h2>
+    </section>
+    <section id="zone2" class="container">
+        <h2>bộ chọn class</h2>
+        <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, hic aliquam sequi, accusamus possimus nulla neque alias numquam maxime mollitia vel ea eveniet nostrum quod iure voluptatibus necessitatibus illo molestias?
+            <span class="sp-1">Price:123.456</span>
+            <span class="sp-1">old-Price:12222</span>
+        </p>
+        <input type="button" value="button 1" class="btn btn-red">
+        <input type="button" value="button2" class="btn btn-green">
+        <input type="submit" value="Login">
+    </section>
+</body>
+</html>
