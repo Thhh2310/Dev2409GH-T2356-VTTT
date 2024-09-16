@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo menu ngang</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*
+        header{
+            margin-bottom: 2rem;
+        }
+        section{
+            background-color: gray;
+            display: flex;
+        }
+        
+        section div a{
+            color: black;
+            margin: 1rem;
+        }
+        section div a:hover{
+            background-color: green;
+            color: red;
+        }
+        */
+
+        nav ul{
+            list-style: none; /*bỏ dấu chấm trong thẻ ul li*/
+            display: flex;
+            background-color: #ccc;
+        }
+        nav ul li{
+            border-right: 1px solid red;
+        }
+        nav ul li:last-child{
+            border-right: 0;
+        }
+        nav ul li:hover{
+            background-color: green;
+        }
+        a{
+            text-decoration: none;  /*bỏ dấu gạch chân*/
+        }
+        nav a{
+            display: block;
+            color: #1f1e1e;
+            padding: .35rem 1rem;
+        }
+        nav a:hover{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <h2>Tạo menu ngang</h2>
+    </header>
+    <section>
+        <div><a href="">Trang chủ</a></div>
+        <div><a href="">Sản phẩm</a></div>
+        <div><a href="">Dịch vụ</a></div>
+        <div><a href="">Hỗ trợ</a></div>
+        <div><a href="">Liên hệ</a></div>
+    </section> -->
+
+
+    <nav>
+        <ul>
+            <li><a href="#" title="Trang chủ">Trang chủ</a></li>
+            <li><a href="#" title="Sản phẩm">Sản phẩm</a></li>
+            <li><a href="#" title="Dịch vụ">Dịch vụ</a></li>
+            <li><a href="#" title="Hỗ trợ">Hỗ trợ</a></li>
+            <li><a href="#" title="Liên hệ">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
