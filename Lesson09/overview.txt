@@ -1,0 +1,7 @@
+Responsive:
+- thiết kế css để trang html chạy trên các tỉ lệ màn hình khác nhau
+    + @media
+    + Flexibility
+
+
+
