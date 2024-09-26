@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: GothamMedium, sans-serif;
+}
+body{
+    background-color: #ccc;
+    font-size: 16px;
+}
+header{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0, 0.1, 0.5, rgba(0, 0, 0, 0.1) ;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.logo{
+    width: 120px;
+    height: 100%;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.icon{
+    display: flex;
+    
+}
+.icon div{
+    margin-right: 10px;
+}
+i{
+    font-size: 22px;
+}
+
+footer{
+    background-color: #363636;
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding:2rem 4rem;
+}
+.footer h1{
+    font-size: 20px;
+}
+.footer h2{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.h5{
+    width: 5rem;
+    content: "";
+    top: 100%;
+    left: 0;
+    border-top: 0.3rem solid #fff;
+}
+.footer h4{
+    font-size: 14px;
+    transition: margin-left 0.3s ease;
+}
+.footer h4:hover{
+    margin-left:5px;
+}
+
+
+
+.box-content{
+    background: #f3f3f3;
+    padding-top: 5rem;
+}
+.banner-page{
+    position: relative;
+}
+.banner-page_image img{
+    height: 25rem;
+    width: 100%;
+}
+.banner-page_title{
+    position: absolute;
+    top: 12rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-page_title img{
+    width: 6rem;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+.banner-page_title p{
+    font-size: 2rem;
+    color: #fff;
+    font-family: Gotham-UltraItalic;
+}
+.box-about{
+    text-align: center;
+}
+.wrapper-box{
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    top: -3rem;
+    padding: 3rem;
+}
+.about-vision{
+    margin-bottom: 10rem;
+}
+.wrapper-box .about-vision p{
+    margin-top: 1.5rem;
+}
+.wrapper-box p{
+    margin-bottom: 0;
+    font-size: .9rem;
+}
+.about-policy .col-md-6{
+    margin-bottom: 1.5rem;
+}
+.about-policy .thumbnail{
+    border: .2rem solid #bd945f;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    height: 7rem;
+}
+.about-policy .image{
+    max-width: 5rem;
+}
+.about-policy .content{
+    margin-left: 1rem;
+    text-align: left;
+}
+.about-policy .title{
+    color: #bd945f;
+}
