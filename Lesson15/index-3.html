@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hiển thị false</p>
+    <p id="demo1"></p>
+    <hr>
+    <p>Hiển thị true</p>
+    <p id="demo2"></p>
+    <hr>
+    <p>Hiển thị giá trị rỗng bằng booleans</p>
+    <p id="demo3"></p>
+    <hr>
+    <p>Hiển thị giá trị -0 bằng booleans</p>
+    <p id="demo4"></p>
+    <hr>
+    <p>Hiển thị giá trị không xác định bằng booleans</p>
+    <p id="demo5"></p>
+    <hr>
+    <p>Hiển thị giá trị = null bằng booleans</p>
+    <p id="demo6"></p>
+    <hr>
+    <p>Hiển thị giá trị = false bằng booleans</p>
+    <p id="demo7"></p>
+    <hr>
+    <p>Hiển thị toán tử sai bằng booleans</p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+    <script>
+        let x=0;    //false
+        let y=1;    //true
+        let z="";   //false
+        let a=-0;   //false
+        let b;      //flase
+        let c=null; //false
+        let d=false;//false
+        let e=10/"Hello";   //false
+        let f=10/10;        //true
+
+        document.getElementById("demo1").innerHTML=Boolean(x);
+        document.getElementById("demo2").innerHTML=Boolean(y);
+        document.getElementById("demo3").innerHTML=Boolean(z);
+        document.getElementById("demo4").innerHTML=Boolean(a);
+        document.getElementById("demo5").innerHTML=Boolean(b);
+        document.getElementById("demo6").innerHTML=Boolean(c);
+        document.getElementById("demo7").innerHTML=Boolean(d);
+        document.getElementById("demo8").innerHTML=Boolean(e);
+        document.getElementById("demo9").innerHTML=Boolean(f);
+    </script>
+</body>
+</html>

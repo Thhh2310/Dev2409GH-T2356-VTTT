@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Method Obj</h1>
+    <p><strong>Hiển thị 1 biến</strong></p>
+    <p id="demo"></p>
+    <hr>
+    <p><strong>Đối tượng có nhiều giá trị</strong></p>
+    <p id="demo1"></p>
+    <hr>
+    <p><strong>Tạo một đối tượng rỗng sau đó thêm 4 thuộc tính</strong></p>
+    <p id="demo2"></p>
+    <hr>
+    <p><strong>Phương thức có hàm xác định lưu trữ trong giá trị </strong></p>
+    <p id="demo3"></p>
+
+    <script>
+        let car="Mec";
+        document.getElementById("demo").innerHTML="Ước mơ có một chiếc " + car;
+
+        const car1={type:"Vinf",model:"V9",color:"green"};
+        document.getElementById("demo1").innerHTML="Ước có một chiếc " + car1.model + " của " + car1.type + " và có màu " + car1.color;
+
+        const person = {
+            firstName:"Vu",
+            lastName:"Thhh",
+            fullName: function(){
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        person.name="Th";
+        person.firstName="Vu";
+        person.lastName="Thhh";
+        person.age=18;
+        person.address="HN";
+        person.gender="female";
+
+        delete person.age;
+
+        const x=person;
+        x.birth=2003;
+        document.getElementById("demo2").innerHTML="Tôi tên là " + person.name + ".<br> Năm nay " + person.age + " tuổi. <br> Nhà ở " + person.address + ". <br> Giới tính " + person.gender;
+        document.getElementById("demo3").innerHTML="Tôi tên là: " + person.fullName() + " <br> Tôi sinh năm: " + x.birth;
+    </script>
+
+</body>
+</html>
