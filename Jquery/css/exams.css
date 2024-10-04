@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.d-flex{
+    width: 100%;
+    padding: .7rem;
+}
+.container{
+    background-color: #ccc;
+}
+.btn, .form-control{
+    height: 50px;
+}
+.tb{
+    background-color: #fff;
+    border-radius: 5px;
+}
+h4{
+    padding-top: 1rem;
+    margin: 1rem;
+}
+
+
+form{
+    background-color: #fff;
+    width: calc(6*100%/12);
+    border-radius: 5px;
+    margin: auto;
+}
+td{
+    padding: 0 1.5rem;
+}
+input{
+    margin: 1rem 0;
+}
+.btn{
+    margin: 1rem;
+}
+
