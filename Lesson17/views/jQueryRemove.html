@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="div1" style="height: 100px; width: 300px; border: 1px solid black; background-color: violet;">
+        Đây là một vài dòng của thẻ div
+        <p id="p1">Đoạn văn 1</p>
+        <p>Đoạn văn 2</p>
+    </div>
+    <button id="btn1">Xoá all</button>
+    <button id="btn2">Xoá 1tp</button>
+    <button id="btn3">Xoá thành phần trong div</button>
+    <button id="show">Hiển thị</button>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#div1").remove(); //xoá tất cả 
+            })
+            $("#btn2").click(function(){
+                $("p").remove("#p1"); //xoá 1 thành phần
+            })
+            $("#btn3").click(function(){
+                $("#div1").empty(); //xoá các thành phần trong div
+            })
+            $("#show").click(function(){
+                $("#div1").show(); //Hiển thị
+            })
+        })
+    </script>
+</body>
+</html>

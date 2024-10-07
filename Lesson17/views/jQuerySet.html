@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <p id="test1">Đây là dòng 1</p>
+    <p id="test2">Đây là dòng 2</p>
+    <p>Nhập: <input type="text" id="test3" value="happyEnding"></p>
+
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#test1").text("<b>Halo</b>");
+            })
+            $("#btn2").click(function(){
+                $("#test2").html("<b>Halllll</b>");
+            })
+            $("#btn3").click(function(){
+                $("#test3").val("<b>Halooooo</b>");
+            })
+        })
+    </script>
+</body>
+</html>

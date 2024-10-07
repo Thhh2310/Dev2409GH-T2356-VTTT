@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h2>Đây là phần tử của thẻ h2</h2>
+    <p>Đây là phần tử của thẻ p</p>
+    <p>Đây là đoạn phần tử khác của thẻ p</p>
+
+    <button class="btn1">Click để ẩn các đoạn có trong thẻ p</button>
+    <button class="btn2">Hiển thị p</button>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $("p").hide();
+            })
+            $(".btn2").click(function(){
+                $("p").show();
+            })
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <p>Đây là dòng 1</p>
+    <p>Đây là dòng 2</p>
+    <ul>
+        <li>Sản phẩm 1</li>
+        <li>Sản phẩm 2</li>
+        <li>Sản phẩm 3</li>
+    </ul>
+
+    <button id="btn1">Thêm p</button>
+    <button id="btn2">Thêm li sau</button>
+    <button id="btn3">Thêm li trước</button>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").after("<b>Thêm và Xoá</b>");
+            })
+            $("#btn2").click(function(){
+                $("ul").append("<li>Sản phẩm n+1</li>");
+            })
+            $("#btn3").click(function(){
+                $("ul").prepend("<li>Sản phẩm n-1</li>");
+            })
+        })
+    </script>
+    
+</body>
+</html>
