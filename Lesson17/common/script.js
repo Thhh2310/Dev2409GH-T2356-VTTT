@@ -70,8 +70,26 @@ $(document).ready(function(){
     });
 
     //Show
-    $(document).on('click','editBtn',function(){
-        editingIndex=$(this).data('index');
+    $(document).on('click','viewBtn',function(){
+        const index = $(this).data('index');
+        const students = getStudents();
+        const student = students[index];
+
+        $('#studentID').val(student.studentId);
+        $('#studentName').val(student.studentName);
+        $('#studentAge').val(student.age);
+        $('#studentGender').val(student.sex ? 'true':'false');
+        $('#studentBirthDate').val(student.birthDate);
+        $('#studentBirthPlace').val(student.birthPlace);
+        $('#studentAddress').val(student.address);
+        $('#studentForm').show();
+        
+        $('#formTitle').text('Thông tin sinh viên');
+    });
+
+    //Edit Student
+    $(document).on('click', '.editBtn', function(){
+        editingIndex = $(this).data('index');
         const students = getStudents();
         const student = students[editingIndex];
 
@@ -82,12 +100,11 @@ $(document).ready(function(){
         $('#studentBirthDate').val(student.birthDate);
         $('#studentBirthPlace').val(student.birthPlace);
         $('#studentAddress').val(student.address);
+        $('#studentForm').show();
         $('#formTitle').text('Sửa sinh viên');
-        isEditing=true;
-    });
-
-    //Edit Student
-
+        isEditing = true;
+        
+    })
 
 
     //Delete student
@@ -129,5 +146,8 @@ $(document).ready(function(){
         //refresh table with the filtered and sỏted students
         refreshTable(students);
     });
+
+    //Intital
+    refreshTable();
 
 });

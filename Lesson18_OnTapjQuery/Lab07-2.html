@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        .btn button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="zone1">
+        <h1>Chọn màu chữ</h1>
+        <div class="btn">
+            <button value="red">Đỏ</button>
+            <button value="green">Xanh</button>
+            <button value="yellow">Vàng</button>
+            <button value="gray">Ghi</button>
+            <button value="violet">Tím</button>
+        </div>
+        <div class="title">
+            <p>Lập trình web với PHP</p>
+        </div>
+
+
+        <button id="reset">Haha</button>
+    </div>
+
+    
+    <!-- code js -->
+    <script>
+        $(document).ready(function(){
+            //alert("Xin chào, tôi là jQuery!");
+
+            //Tô màu nền
+            $(".btn > button").each(function(){
+                let valcolor = $(this).attr("value");
+                $(this).css("background-color",valcolor)
+                        .css({
+                            "border":"1px solid" +  valcolor,
+                            "padding":".15rem 1rem"
+                        });
+            });
+
+            //Tô màu chữ 
+            $(".btn button").click(function(){
+                let color = $(this).attr("value");
+                $(".title p").css({
+                    "color":color
+                });
+            });
+
+            //Reset
+            $("#reset").click(function(){   //$("#zone1 > button").
+                $(".title p").css("color","black");
+                //$(".title p").toggle();
+            });
+        });
+    </script>
+</body>
+</html>
