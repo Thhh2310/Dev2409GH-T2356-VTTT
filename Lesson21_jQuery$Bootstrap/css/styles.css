@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #ccc;
+}
+.bg-white{
+    background-color: #fff;
+}
+.product-item{
+    background-color: #f1f1f1;
+    margin-bottom: 1rem;
+}
+.p-content{
+    text-align: center;
+    padding: 1.5rem 0;
+}
+p{
+    margin: 0;
+}
+.product-item img{
+    height: 15rem;
+}
+.product-item a{
+    text-decoration: none;
+    color: #2c2e53;
+}
+.product-item sup{
+    color: red;
+}
+.product-item a{
+    font-family: "Gotham-Ultra";
+}
